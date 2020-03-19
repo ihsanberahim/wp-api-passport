@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "psr-4": {
+            "WpRestPassport\\": "src"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "5.6.40"
+        }
+    },
+    "require": {
+        "tightenco/collect": "^5.4"
+    }
+}
