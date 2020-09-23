@@ -7,7 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit9bfd8fc499c6895dcdc16873949c3638
 {
     public static $files = array (
-        '7ba3c774c30c8399e359b5ff7f3b943e' => __DIR__ . '/..' . '/tightenco/collect/src/Illuminate/Support/helpers.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -15,9 +16,24 @@ class ComposerStaticInit9bfd8fc499c6895dcdc16873949c3638
         array (
             'WpRestPassport\\' => 15,
         ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Translation\\' => 30,
+        ),
+        'P' => 
+        array (
+            'Psr\\SimpleCache\\' => 16,
+            'Psr\\Container\\' => 14,
+        ),
         'I' => 
         array (
-            'Illuminate\\' => 11,
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Contracts\\' => 21,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Inflector\\' => 26,
         ),
     );
 
@@ -26,9 +42,47 @@ class ComposerStaticInit9bfd8fc499c6895dcdc16873949c3638
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'Illuminate\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' => 
         array (
-            0 => __DIR__ . '/..' . '/tightenco/collect/src/Illuminate',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
+        ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+    );
+
+    public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'UpdateHelper\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
+            ),
         ),
     );
 
@@ -37,6 +91,8 @@ class ComposerStaticInit9bfd8fc499c6895dcdc16873949c3638
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit9bfd8fc499c6895dcdc16873949c3638::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit9bfd8fc499c6895dcdc16873949c3638::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit9bfd8fc499c6895dcdc16873949c3638::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit9bfd8fc499c6895dcdc16873949c3638::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
